@@ -10,7 +10,7 @@ export default defineConfig({
   ],
   // This base is important for GitHub Pages deployment
   // Replace 'my-portfolio' with your actual repository name
-  base: '/my-portfolio/',
+  base: '/lleoparden/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',

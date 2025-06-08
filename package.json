@@ -2,10 +2,20 @@
   "dependencies": {
     "@mdx-js/react": "^3.1.0",
     "@mdx-js/rollup": "^3.1.0",
+    "date-fns": "^4.1.0",
     "framer-motion": "^12.16.0",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.513.0",
     "react-router-dom": "^7.6.2"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
     "@types/mdx": "^2.0.13"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   }
 }
