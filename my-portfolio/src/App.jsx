@@ -11,7 +11,7 @@ import NotFound from './components/pages/NotFound';
 
 function App() {
   return (
-    <Router basename={import.meta.env.DEV ? '/' : '/your-repo-name'}>
+    <Router basename={import.meta.env.DEV ? '/' : '/lleoparden'}>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
