@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-neutral-900 text-zinc-900 flex flex-col">
+    <div className="min-h-screen bg-zinc-900 text-zinc-900 flex flex-col">
       <Navbar />
       <main className="flex-grow">
         <AnimatePresence mode="wait">

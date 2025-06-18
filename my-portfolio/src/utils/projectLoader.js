@@ -1,3 +1,9 @@
+import bikoParkImage from '../assets/images/projects/biko-park.png';
+import chessImage from '../assets/images/projects/oop-chess.png';
+import bubbleImage from '../assets/images/projects/bubble.png';
+import sortImage from '../assets/images/projects/sort.png';
+import memeImage from '../assets/images/projects/2oolameme.png';
+
 export const loadProject = async (slug) => {
   try {
     const projects = {
@@ -9,11 +15,18 @@ export const loadProject = async (slug) => {
         technologies: [
           'C++', 'SFML', 'Object-Oriented Design', 'Visual Studio Code', 'Tiled Map Editor', 'Git'
         ],
-        primaryColor: '#f59e0b',
-        secondaryColor: '#3b82f6',
-        image: '/images/projects/biko-park.png',
+        primaryColor: '#f68e4e',         // keep
+        secondaryColor: '#f7ddcd',       // keep
+        textOnPrimary: '#ffffff',        // keep
+        textOnSecondary: '#000000',      // new
+        background: '#1a0f0a',           // new
+        cardBackground: '#2d1810',       // new
+        cardBorder: '#f68e4e',           // keep
+        textOnSecondary: '#2d1810',
+        image: bikoParkImage,
         github: 'https://github.com/lleoparden/Biko_Park',
         demo: 'https://za3boot-productions.itch.io/biko-park',
+        youtubeVideo: 'https://youtu.be/xz7O9LFeNxU',
         features: [
           'Multiplayer gameplay with synchronized puzzles',
           'Inspired by classic co-op puzzle design',
@@ -33,9 +46,15 @@ export const loadProject = async (slug) => {
         technologies: [
           'Java', 'Java Swing', 'Object-Oriented Programming', 'IntelliJ IDEA', 'Design Patterns'
         ],
-        primaryColor: '#6366f1',
-        secondaryColor: '#1f2937',
-        image: '/images/projects/oop-chess.jpg',
+        primaryColor: '#729453',         // keep
+        secondaryColor: '#eaebd0',       // keep
+        textOnPrimary: '#ffffff',        // keep
+        textOnSecondary: '#000000',      // new
+        background: '#1a0f0a',           // new
+        cardBackground: '#2d1810',       // new
+        cardBorder: '#729453',           // keep
+        textOnSecondary: '#2d1810',
+        image: chessImage,
         github: 'https://github.com/lleoparden/oop-chess',
         features: [
           'Standard and chaos mode gameplay',
@@ -58,9 +77,15 @@ export const loadProject = async (slug) => {
           'Kotlin', 'Firebase', 'Firebase Realtime Database', 'Firebase Authentication',
           'Android Studio', 'Material Design', 'MVVM Architecture'
         ],
-        primaryColor: '#3b82f6',
-        secondaryColor: '#1e293b',
-        image: '/images/projects/bubble.jpg',
+        primaryColor: '#cbbde3',         // keep
+        secondaryColor: '#09090a',       // keep
+        textOnPrimary: '#ffffff',        // keep
+        textOnSecondary: '#000000',      // new
+        background: '#1a0f0a',           // new
+        cardBackground: '#2d1810',       // new
+        cardBorder: '#cbbde3',           // keep
+        textOnSecondary: '#2d1810',
+        image: bubbleImage,
         github: 'https://github.com/lleoparden/Chat_Application',
         features: [
           'Real-time text and voice messaging',
@@ -82,9 +107,15 @@ export const loadProject = async (slug) => {
           'Kotlin', 'Firebase', 'Firebase Firestore', 'Firebase Storage', 'Android Studio',
           'MVVM Architecture', 'Retrofit', 'Glide'
         ],
-        primaryColor: '#ec4899',
-        secondaryColor: '#0f172a',
-        image: '/images/projects/2ool-a-meme.jpg',
+        primaryColor: '#20aae4',         // keep
+        secondaryColor: '#ffffff',       // keep
+        textOnPrimary: '#ffffff',        // keep
+        textOnSecondary: '#000000',      // new
+        background: '#1a0f0a',           // new
+        cardBackground: '#2d1810',       // new
+        cardBorder: '#20aae4',           // keep
+        textOnSecondary: '#2d1810',
+        image: memeImage,
         github: 'https://github.com/lleoparden/2ool_a_meme',
         demo: 'https://2oolameme.com/',
         features: [
@@ -101,13 +132,20 @@ export const loadProject = async (slug) => {
   slug: 'sorting-visualizer',
   title: 'Sorting Algorithm Visualizer',
   description: 'A C++ application that visually demonstrates how common sorting algorithms work.',
+  primaryColor: '#39ff14',         // keep
+  secondaryColor: '#00ff00',       // keep
+  textOnPrimary: '#00ff00',        // keep
+  textOnSecondary: '#39ff14',      // new
+  background: '#1a0f0a',           // new
+  cardBackground: '#111111',       // new
+  Background: '#0d0d0d', 
+  cardBorder: '#00ff00',           // keep
+  textOnSecondary: '#2d1810',
   longDescription: 'The Sorting Algorithm Visualizer is a desktop application that helps learners understand how different sorting algorithms function through animated visual feedback. It supports multiple algorithms like bubble sort, selection sort, insertion sort, and more. The application features bar visualizations that change in real-time as the sorting progresses.',
   technologies: [
     'C++', 'SFML', 'Object-Oriented Design', 'Visual Studio Code', 'Algorithm Design', 'Git'
   ],
-  primaryColor: '#9333ea',
-  secondaryColor: '#1f2937',
-  image: '/images/projects/sorting-visualizer.jpg',
+  image: sortImage,
   github: 'https://github.com/lleoparden/sorting-visualizer',
   features: [
     'Visual representation of sorting algorithms',
@@ -139,7 +177,7 @@ export const loadAllProjects = () => {
       title: 'Biko Park',
       description: 'A multiplayer puzzle-platformer with creative cooperative gameplay.',
       technologies: ['C++', 'SFML', 'Visual Studio Code'],
-      image: '/images/projects/biko-park.jpg',
+      image: bikoParkImage,
       github: 'https://github.com/lleoparden/Biko_Park',
       demo: 'https://za3boot-productions.itch.io/biko-park'
     },
@@ -148,7 +186,7 @@ export const loadAllProjects = () => {
       title: 'OOP Chess',
       description: 'A Java-based chess game with chaos mode and OOP design.',
       technologies: ['Java', 'Java Swing', 'IntelliJ IDEA'],
-      image: '/images/projects/oop-chess.jpg',
+      image: chessImage,
       github: 'https://github.com/lleoparden/oop-chess'
     },
     {
@@ -156,7 +194,7 @@ export const loadAllProjects = () => {
       title: 'Chat Application (Bubble)',
       description: 'A real-time messaging app with stories and media sharing.',
       technologies: ['Kotlin', 'Firebase', 'Android Studio'],
-      image: '/images/projects/bubble.jpg',
+      image: bubbleImage,
       github: 'https://github.com/lleoparden/Chat_Application'
     },
     {
@@ -164,7 +202,7 @@ export const loadAllProjects = () => {
       title: '2ool a Meme App',
       description: 'App for a game brand featuring chat and e-commerce.',
       technologies: ['Kotlin', 'Firebase', 'Android Studio'],
-      image: '/images/projects/2ool-a-meme.jpg',
+      image: memeImage,
       github: 'https://github.com/lleoparden/2ool_a_meme',
       demo: 'https://2oolameme.com/'
     },{
@@ -172,7 +210,7 @@ export const loadAllProjects = () => {
   title: 'Sorting Algorithm Visualizer',
   description: 'A desktop C++ visual tool for sorting algorithms like bubble and insertion sort.',
   technologies: ['C++', 'SFML', 'Visual Studio Code'],
-  image: '/images/projects/sorting-visualizer.jpg',
+  image: sortImage,
   github: 'https://github.com/lleoparden/sorting-visualizer'
 }
 
@@ -181,50 +219,13 @@ export const loadAllProjects = () => {
 
 export const loadSmallProjects = () => {
   return [
-    {
+    /*{
       title: 'Weather App',
       description: 'A responsive weather application using OpenWeather API',
       technologies: ['React', 'JavaScript', 'API'],
       category: 'React',
       github: 'https://github.com/yourusername/weather-app',
       demo: 'https://your-weather-app.netlify.app'
-    },
-    {
-      title: 'Task Manager',
-      description: 'Simple task management tool with local storage',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
-      category: 'JavaScript',
-      github: 'https://github.com/yourusername/task-manager'
-    },
-    {
-      title: 'Calculator',
-      description: 'Scientific calculator with advanced operations',
-      technologies: ['Python', 'Tkinter'],
-      category: 'Python',
-      github: 'https://github.com/yourusername/calculator'
-    },
-    {
-      title: 'Color Palette Generator',
-      description: 'Generate beautiful color palettes for design projects',
-      technologies: ['React', 'CSS'],
-      category: 'React',
-      github: 'https://github.com/yourusername/color-generator',
-      demo: 'https://your-color-generator.netlify.app'
-    },
-    {
-      title: 'Expense Tracker',
-      description: 'Track personal expenses with charts and analytics',
-      technologies: ['Vue.js', 'Chart.js'],
-      category: 'Vue.js',
-      github: 'https://github.com/yourusername/expense-tracker'
-    },
-    {
-      title: 'Random Quote Generator',
-      description: 'Get inspired with random quotes and share them',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
-      category: 'JavaScript',
-      github: 'https://github.com/yourusername/quote-generator',
-      demo: 'https://your-quotes.netlify.app'
-    }
+    }*/
   ];
 };

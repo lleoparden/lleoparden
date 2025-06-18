@@ -1,40 +1,48 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter ,Facebook, Instagram} from 'lucide-react';
 import SectionHeader from '../ui/SectionHeader';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
 
 const Contact = () => {
   const contactLinks = [
-    {
-      name: 'Email',
-      href: 'mailto:your.email@example.com',
-      icon: Mail,
-      color: 'text-red-400 hover:text-red-300',
-      description: 'your.email@example.com'
-    },
-    {
-      name: 'GitHub',
-      href: 'https://github.com/yourusername',
-      icon: Github,
-      color: 'text-gray-400 hover:text-white',
-      description: '@yourusername'
-    },
-    {
-      name: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourusername',
-      icon: Linkedin,
-      color: 'text-blue-400 hover:text-blue-300',
-      description: 'linkedin.com/in/yourusername'
-    },
-    {
-      name: 'Twitter',
-      href: 'https://twitter.com/yourusername',
-      icon: Twitter,
-      color: 'text-sky-400 hover:text-sky-300',
-      description: '@yourusername'
-    }
-  ];
+  {
+    name: 'Email',
+    href: 'mailto:mostafa.ahmed.nabil.eid@gmail.com',
+    icon: Mail,
+    color: 'text-red-400 hover:text-red-300',
+    description: 'mostafa.ahmed.nabil.eid@gmail.com'
+  },
+  {
+    name: 'GitHub',
+    href: 'https://github.com/lleoparden',
+    icon: Github,
+    color: 'text-gray-400 hover:text-white',
+    description: '@lleoparden'
+  },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/mostafa-eid06/',
+    icon: Linkedin,
+    color: 'text-blue-400 hover:text-blue-300',
+    description: 'linkedin.com/in/mostafa-eid06'
+  },
+  {
+    name: 'Facebook',
+    href: 'https://www.facebook.com/mostafa.ahmedeid.5',
+    icon: Facebook,
+    color: 'text-blue-500 hover:text-blue-400',
+    description: 'facebook.com/mostafa.ahmedeid.5'
+  },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/mostafa_eid06/',
+    icon: Instagram,
+    color: 'text-pink-400 hover:text-pink-300',
+    description: '@mostafa_eid06'
+  }
+];
+
 
   return (
     <div className="py-20 px-4">
@@ -63,7 +71,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="block bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-all"
+                  className="block bg-zinc-800 rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-all"
                 >
                   <div className="flex items-center mb-3">
                     <IconComponent className={`mr-3 ${link.color} transition-colors`} size={24} />

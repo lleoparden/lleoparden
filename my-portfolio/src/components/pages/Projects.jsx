@@ -46,37 +46,39 @@ const Projects = () => {
           </section>
         </AnimatedWrapper>
 
-        {/* Small Projects by Category */}
-        <AnimatedWrapper delay={0.3}>
-          <section>
-            <h3 className="text-2xl font-semibold text-white mb-8">More Projects</h3>
-            {Object.entries(groupedSmallProjects).map(([category, projects], categoryIndex) => (
-              <div key={category} className="mb-12">
-                <h4 className="text-xl font-medium text-gray-300 mb-6 flex items-center">
-                  <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">
-                    {projects.length}
-                  </span>
-                  {category}
-                </h4>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {projects.map((project, projectIndex) => (
-                    <motion.div
-                      key={project.title}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ 
-                        duration: 0.5, 
-                        delay: (categoryIndex * 0.2) + (projectIndex * 0.1) 
-                      }}
-                    >
-                      <ProjectCard project={project} type="small" />
-                    </motion.div>
-                  ))}
+        {/* Small Projects by Category - Only render if there are small projects */}
+        {smallProjects.length > 0 && (
+          <AnimatedWrapper delay={0.3}>
+            <section>
+              <h3 className="text-2xl font-semibold text-white mb-8">More Projects</h3>
+              {Object.entries(groupedSmallProjects).map(([category, projects], categoryIndex) => (
+                <div key={category} className="mb-12">
+                  <h4 className="text-xl font-medium text-gray-300 mb-6 flex items-center">
+                    <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">
+                      {projects.length}
+                    </span>
+                    {category}
+                  </h4>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {projects.map((project, projectIndex) => (
+                      <motion.div
+                        key={project.title}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ 
+                          duration: 0.5, 
+                          delay: (categoryIndex * 0.2) + (projectIndex * 0.1) 
+                        }}
+                      >
+                        <ProjectCard project={project} type="small" />
+                      </motion.div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </section>
-        </AnimatedWrapper>
+              ))}
+            </section>
+          </AnimatedWrapper>
+        )}
       </div>
     </div>
   );

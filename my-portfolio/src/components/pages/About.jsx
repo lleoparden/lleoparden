@@ -8,27 +8,25 @@ const About = () => {
       <div className="max-w-4xl mx-auto">
         <SectionHeader 
           title="About Me" 
-          subtitle="Get to know me better"
+          subtitle="A Glimpse Into My Journey"
         />
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <AnimatedWrapper>
             <div className="prose prose-invert max-w-none">
               <p className="text-lg text-gray-300 mb-6">
-                I'm a passionate full-stack developer with expertise in modern web technologies. 
-                I love creating digital experiences that are not only functional but also beautiful 
-                and user-friendly.
+                I'm a dedicated Computer Science student at Ain Shams University, currently wrapping up my second year. 
+                Beyond the classroom, I'm passionate about building meaningful software — from engaging web experiences to intelligent desktop applications and Android apps.
               </p>
-              
+
               <p className="text-lg text-gray-300 mb-6">
-                With a background in computer science and years of hands-on experience, 
-                I specialize in React, Node.js, and modern development practices. 
-                I'm always eager to learn new technologies and tackle challenging problems.
+                My journey has included diverse hands-on projects: a multiplayer puzzle game built with C++ & SFML, a full OOP-based chess game in Java with custom game modes, and an eCommerce app in Kotlin using Firebase. 
+                I’m constantly exploring new technologies — be it modern React stacks, machine learning in Python, or secure offline messaging on Android.
               </p>
 
               <p className="text-lg text-gray-300">
-                When I'm not coding, you can find me exploring new technologies, 
-                contributing to open source projects, or enjoying a good book on software architecture.
+                Whether I’m designing UI, solving algorithmic problems, or optimizing back-end systems, I enjoy bridging creativity with logic. 
+                When I’m not coding, I’m probably reading, sketching new UI concepts, or exploring open-source tools.
               </p>
             </div>
           </AnimatedWrapper>
@@ -37,10 +35,10 @@ const About = () => {
             <div className="bg-zinc-800 rounded-lg p-8 border border-gray-700">
               <h3 className="text-xl font-semibold text-white mb-4">Quick Facts</h3>
               <ul className="space-y-3 text-gray-300">
-                <li><strong>Location:</strong> Your City, Country</li>
-                <li><strong>Experience:</strong> X+ years</li>
-                <li><strong>Education:</strong> Your Degree</li>
-                <li><strong>Interests:</strong> Web Development, UI/UX, Open Source</li>
+                <li><strong>Location:</strong> New Cairo, Egypt</li>
+                <li><strong>Experience:</strong> 2+ years (projects, internships & training)</li>
+                <li><strong>Education:</strong> B.Sc. in Computer Science, Ain Shams University</li>
+                <li><strong>Interests:</strong> Full-Stack Development, Game Design, AI, Open Source</li>
               </ul>
             </div>
           </AnimatedWrapper>

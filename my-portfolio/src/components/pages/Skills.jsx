@@ -20,6 +20,10 @@ const Skills = () => {
     {
       category: 'Soft Skills',
       skills: ['Time Management', 'Problem-Solving', 'Teamwork', 'Communication', 'Adaptability', 'Critical Thinking']
+    },
+    {
+      category: 'IDE',
+      skills: ['VSCode', 'Visual Studio', 'Intellij', 'Android Studio']
     }
   ];
 

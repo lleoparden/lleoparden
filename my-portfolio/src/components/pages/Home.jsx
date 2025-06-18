@@ -16,7 +16,7 @@ const Home = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             Hi, I'm{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-800">
               Mostafa Eid
             </span>
           </motion.h1>
@@ -39,7 +39,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/projects"
-              className="inline-flex items-center px-8 py-3 bg-orange-400 hover:bg-orange-500 text-white font-semibold rounded-lg transition-colors group"
+              className="inline-flex items-center px-8 py-3 bg-indigo-400 hover:bg-indigo-500 text-white font-semibold rounded-lg transition-colors group"
             >
               View My Work
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />

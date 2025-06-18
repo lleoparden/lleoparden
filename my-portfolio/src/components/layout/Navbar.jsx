@@ -18,13 +18,13 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-neutral-800/90 backdrop-blur-sm sticky top-0 z-50 border-b border-neutral-700">
+    <nav className="bg-zinc-900 backdrop-blur-sm sticky top-0 z-50 border-b border-neutral-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <motion.div
               whileHover={{ scale: 1.1 }}
-              className="text-3xl font-bold text-orange-400"
+              className="text-3xl font-bold text-indigo-500"
             >
               LLeoparden
             </motion.div>
@@ -39,8 +39,8 @@ const Navbar = () => {
                   to={item.path}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     isActive(item.path)
-                      ? 'bg-orange-400 text-black'
-                      : 'text-neutral-300 hover:bg-neutral-700 hover:text-white'
+                      ? 'bg-indigo-500 text-black'
+                      : 'text-zinc-100 hover:bg-neutral-700 hover:text-white'
                   }`}
                 >
                   {item.name}
@@ -76,7 +76,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     isActive(item.path)
-                      ? 'bg-orange-400 text-white'
+                      ? 'bg-indigo-500 text-white'
                       : 'text-neutral-300 hover:bg-neutral-700 hover:text-white'
                   }`}
                 >
