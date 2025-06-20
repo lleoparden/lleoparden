@@ -6,7 +6,7 @@
   "homepage": "https://lleoparden.github.io/lleoparden",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && cpx \"dist/index.html\" dist/404.html",
+    "build": "tsc -b && vite build && powershell Copy-Item -Path dist/index.html -Destination dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",

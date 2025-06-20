@@ -5,27 +5,68 @@ import AnimatedWrapper from '../ui/AnimatedWrapper';
 
 const Skills = () => {
   const skillCategories = [
-    {
-      category: 'Programming Languages',
-      skills: ['C++', 'C', 'Java', 'Python', 'HTML', 'CSS', 'JavaScript', 'PHP', 'SQL']
-    },
-    {
-      category: 'Web & Game Development',
-      skills: ['JQuery', 'Bootstrap', 'SFML', 'MySQL', 'Firebase']
-    },
-    {
-      category: 'Tools & Platforms',
-      skills: ['Git', 'Linux', 'Adobe Photoshop', 'Adobe Illustrator', 'Microsoft Office']
-    },
-    {
-      category: 'Soft Skills',
-      skills: ['Time Management', 'Problem-Solving', 'Teamwork', 'Communication', 'Adaptability', 'Critical Thinking']
-    },
-    {
-      category: 'IDE',
-      skills: ['VSCode', 'Visual Studio', 'Intellij', 'Android Studio']
-    }
-  ];
+  {
+    category: 'Programming Languages',
+    skills: [
+      'C++', 'C', 'Java', 'Python', 'Kotlin', 'HTML', 'CSS',
+      'JavaScript', 'PHP', 'SQL', 'JSON', 'XML'
+    ]
+  },
+  {
+    category: 'Web & Game Development',
+    skills: [
+      'React', 'Vite', 'Tailwind CSS', 'JQuery', 'Bootstrap',
+      'SFML', 'Firebase', 'MySQL', 'Framer Motion', 'MDX'
+    ]
+  },
+  {
+    category: 'Mobile Development',
+    skills: [
+      'Android (XML + Kotlin)', 'Firebase Realtime DB',
+      'Firestore', 'Firebase Auth', 'Local JSON Storage',
+      'Push Notifications'
+    ]
+  },
+  {
+    category: 'Computer Science Topics',
+    skills: [
+      'Software Development', 'Object-Oriented Programming (OOP)',
+      'Algorithms', 'Data Structures', 'Agile Practices',
+      'End-to-End Encryption', 'Database Design'
+    ]
+  },
+  {
+    category: 'Tools & Platforms',
+    skills: [
+      'Git', 'Linux', 'Firebase Console', 'Figma',
+      'Adobe Photoshop', 'Adobe Illustrator',
+      'Adobe Premiere Pro', 'Adobe After Effects', 'Microsoft Office'
+    ]
+  },
+  {
+    category: 'Soft Skills',
+    skills: [
+      'Time Management', 'Problem-Solving', 'Teamwork',
+      'Communication', 'Adaptability', 'Critical Thinking',
+      'Content Creation', 'Media Outreach'
+    ]
+  },
+  {
+    category: 'IDE',
+    skills: [
+      'VSCode', 'Visual Studio', 'IntelliJ IDEA',
+      'Android Studio', 'Jupyter Notebook', 'NetBeans'
+    ]
+  },
+  {
+    category: 'AI & Machine Learning',
+    skills: [
+      'Scikit-learn', 'Pandas', 'NumPy', 'Ensemble Learning',
+      'Tkinter GUI Integration'
+    ]
+  },
+];
+
 
   return (
     <div className="py-20 px-4">

@@ -6,6 +6,7 @@ import About from './components/pages/About';
 import Skills from './components/pages/Skills';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
+import Experience from './components/pages/Experience';
 import ProjectDetail from './components/pages/ProjectDetail';
 import NotFound from './components/pages/NotFound';
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
