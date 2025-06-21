@@ -40,6 +40,7 @@ I love creating modern, responsive web and mobile applications with clean code a
 
 // Concepts
 [OOP, Data Structures, Algorithms, Machine Learning, UI/UX, REST APIs, Realtime Systems]
+```
 📂 Featured Projects
 🎮 Biko Park – Multiplayer puzzle platformer (🏆 3rd place winner) – C++ & SFML
 
