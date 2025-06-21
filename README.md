@@ -41,7 +41,7 @@ I love creating modern, responsive web and mobile applications with clean code a
 // Concepts
 [OOP, Data Structures, Algorithms, Machine Learning, UI/UX, REST APIs, Realtime Systems]
 ```
-##📂 Featured Projects
+## 📂 Featured Projects
 
 
 🎮 Biko Park – Multiplayer puzzle platformer (🏆 3rd place winner) – C++ & SFML
@@ -56,7 +56,7 @@ I love creating modern, responsive web and mobile applications with clean code a
 
 🌐 React Portfolio Website – GitHub-hosted, animated dark theme, MDX-powered content
 
-##📜 Certificates & Experience
+## 📜 Certificates & Experience
 
 💼 Software Dev Intern @ Orange Business (2025)
 
@@ -68,7 +68,7 @@ I love creating modern, responsive web and mobile applications with clean code a
 
 🧩 Biko Park Game Competition Certificate
 
-##🌱 Let's Connect!
+## 🌱 Let's Connect!
 📧 mostafa.ahmed.nabil.eid@gmail.com
 
 🌍 Portfolio Website
