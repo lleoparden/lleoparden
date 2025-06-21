@@ -161,7 +161,7 @@ const Experience = () => {
         <AnimatedWrapper delay={0.4}>
           <div className="mt-12 text-center">
             <a 
-              href="/resume.pdf" 
+              href="/lleoparden/resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-flex items-center px-6 py-3 bg-indigo-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-200"

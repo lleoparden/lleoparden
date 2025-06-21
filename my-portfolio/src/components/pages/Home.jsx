@@ -30,8 +30,8 @@ const Home = () => {
 
         <AnimatedWrapper delay={0.6}>
           <p className="text-lg text-neutral-500 mb-12 max-w-3xl mx-auto">
-            I create modern, responsive web applications with clean code and beautiful design. 
-            Passionate about turning ideas into digital reality.
+            I build modern, responsive web and mobile apps, craft games, and design clean UIs.
+Passionate about turning complex ideas into functional, beautiful digital products.
           </p>
         </AnimatedWrapper>
 
@@ -45,7 +45,7 @@ const Home = () => {
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </Link>
             <a
-              href="/resume.pdf"
+              href="/lleoparden/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-3 bg-transparent border-2 border-neutral-600 hover:border-white text-neutral-300 hover:text-white font-semibold rounded-lg transition-colors"
