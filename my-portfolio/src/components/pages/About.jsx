@@ -15,18 +15,19 @@ const About = () => {
           <AnimatedWrapper>
             <div className="prose prose-invert max-w-none">
               <p className="text-lg text-gray-300 mb-6">
-                I'm a dedicated Computer Science student at Ain Shams University, currently wrapping up my second year. 
-                Beyond the classroom, I'm passionate about building meaningful software — from engaging web experiences to intelligent desktop applications and Android apps.
+                I’m a Computer Science undergraduate at Ain Shams University, currently completing my second year (expected graduation 2027). 
+                Over the past two years, I’ve built a solid foundation in problem solving, algorithms, and software development, while working on practical projects that combine creativity with technical depth.
               </p>
 
               <p className="text-lg text-gray-300 mb-6">
-                My journey has included diverse hands-on projects: a multiplayer puzzle game built with C++ & SFML, a full OOP-based chess game in Java with custom game modes, and an eCommerce app in Kotlin using Firebase. 
-                I’m constantly exploring new technologies — be it modern React stacks, machine learning in Python, or secure offline messaging on Android.
+                My journey so far includes creating a multiplayer puzzle-platformer in C++ & SFML, a JavaFX-based chess game with unique modes and AI, 
+                an Android eCommerce app powered by Firebase, a secure offline-first chat application, and a desktop ML tool for obesity risk assessment using Tkinter and Python. 
+                I’m also diving into systems programming by building a basic operating system from scratch with C and Assembly.
               </p>
 
               <p className="text-lg text-gray-300">
-                Whether I’m designing UI, solving algorithmic problems, or optimizing back-end systems, I enjoy bridging creativity with logic. 
-                When I’m not coding, I’m probably reading, sketching new UI concepts, or exploring open-source tools.
+                I’m passionate about full-stack web development (React, Node.js/FastAPI), mobile development, and AI/ML applications. 
+                Beyond coding, I’m exploring freelancing, contributing to open-source projects, and refining my design sense to deliver polished, impactful software.
               </p>
             </div>
           </AnimatedWrapper>
@@ -38,7 +39,8 @@ const About = () => {
                 <li><strong>Location:</strong> New Cairo, Egypt</li>
                 <li><strong>Experience:</strong> 2+ years (projects, internships & training)</li>
                 <li><strong>Education:</strong> B.Sc. in Computer Science, Ain Shams University</li>
-                <li><strong>Interests:</strong> Full-Stack Development, Game Design, AI, Open Source</li>
+                <li><strong>Current Focus:</strong> Full-Stack Web Development, Systems Programming, AI/ML</li>
+                <li><strong>Interests:</strong> Building impactful apps, Game Design, OS Development, Open Source</li>
               </ul>
             </div>
           </AnimatedWrapper>

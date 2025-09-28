@@ -8,64 +8,84 @@ const Skills = () => {
   {
     category: 'Programming Languages',
     skills: [
-      'C++', 'C', 'Java', 'Python', 'Kotlin', 'HTML', 'CSS',
-      'JavaScript', 'PHP', 'SQL', 'JSON', 'XML'
-    ]
-  },
-  {
-    category: 'Web & Game Development',
-    skills: [
-      'React', 'Vite', 'Tailwind CSS', 'JQuery', 'Bootstrap',
-      'SFML', 'Firebase', 'MySQL', 'Framer Motion', 'MDX'
+      'JavaScript', 'Python', 'Java', 'C++', 'C',
+      'Kotlin', 'SQL', 'HTML', 'CSS',
+      'JSON', 'XML', 'PHP', 'Assembly'
     ]
   },
   {
     category: 'Mobile Development',
     skills: [
-      'Android (XML + Kotlin)', 'Firebase Realtime DB',
-      'Firestore', 'Firebase Auth', 'Local JSON Storage',
-      'Push Notifications'
+      'Android (XML + Kotlin)', 'Firebase Auth',
+      'Firestore', 'Firebase Realtime DB',
+      'Push Notifications', 'Local JSON Storage'
+    ]
+  },
+  {
+    category: 'Web Development',
+    skills: [
+      'React', 'Node.js', 'FastAPI', 'Vite',
+      'Tailwind CSS', 'Bootstrap', 'JQuery',
+      'Framer Motion', 'MDX'
     ]
   },
   {
     category: 'Computer Science Topics',
     skills: [
-      'Software Development', 'Object-Oriented Programming (OOP)',
-      'Algorithms', 'Data Structures', 'Agile Practices',
-      'End-to-End Encryption', 'Database Design'
+      'Algorithms', 'Data Structures', 'Object-Oriented Programming (OOP)',
+      'Operating Systems', 'System Calls',
+      'Software Development', 'Database Design',
+      'Spinlocks & Sleeplocks', 'End-to-End Encryption',
+      'Agile Practices'
     ]
   },
   {
     category: 'Tools & Platforms',
     skills: [
-      'Git', 'Linux', 'Firebase Console', 'Figma',
+      'Git', 'Linux', 'Docker', 'GitHub Actions', 'SSH',
+      'Firebase Console', 'Figma',
       'Adobe Photoshop', 'Adobe Illustrator',
-      'Adobe Premiere Pro', 'Adobe After Effects', 'Microsoft Office'
+      'Adobe Premiere Pro', 'Adobe After Effects',
+      'Microsoft Office', 'MCP'
     ]
   },
   {
     category: 'Soft Skills',
     skills: [
-      'Time Management', 'Problem-Solving', 'Teamwork',
-      'Communication', 'Adaptability', 'Critical Thinking',
+      'Problem-Solving', 'Critical Thinking', 'Teamwork',
+      'Communication', 'Adaptability', 'Time Management',
       'Content Creation', 'Media Outreach'
-    ]
-  },
-  {
-    category: 'IDE',
-    skills: [
-      'VSCode', 'Visual Studio', 'IntelliJ IDEA',
-      'Android Studio', 'Jupyter Notebook', 'NetBeans'
     ]
   },
   {
     category: 'AI & Machine Learning',
     skills: [
-      'Scikit-learn', 'Pandas', 'NumPy', 'Ensemble Learning',
-      'Tkinter GUI Integration'
+      'Scikit-learn', 'Pandas', 'NumPy',
+      'Ensemble Learning', 'Tkinter GUI Integration'
     ]
   },
+  {
+    category: 'IDE',
+    skills: [
+      'VSCode', 'IntelliJ IDEA', 'Android Studio',
+      'Visual Studio', 'Jupyter Notebook', 'NetBeans'
+    ]
+  },
+  {
+    category: 'Databases',
+    skills: [
+      'MySQL', 'Firestore', 'Redis',
+      'TinyDB', 'MongoDB (basic)'
+    ]
+  },
+  {
+    category: 'Game Development',
+    skills: [
+      'SFML'
+    ]
+  }
 ];
+
 
 
   return (

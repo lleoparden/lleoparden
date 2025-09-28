@@ -16,7 +16,7 @@ const Home = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             Hi, I'm{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-800">
+            <span className="text-transparent bg-clip-text bg-indigo-500">
               Mostafa Eid
             </span>
           </motion.h1>
@@ -30,8 +30,7 @@ const Home = () => {
 
         <AnimatedWrapper delay={0.6}>
           <p className="text-lg text-neutral-500 mb-12 max-w-3xl mx-auto">
-            I build modern, responsive web and mobile apps, craft games, and design clean UIs.
-Passionate about turning complex ideas into functional, beautiful digital products.
+            I specialize in developing responsive web and mobile apps and crafting intuitive UIs. My goal is to turn complexity into seamless, impactful digital products.
           </p>
         </AnimatedWrapper>
 

@@ -1,13 +1,195 @@
+import sonicGuiImage from '../assets/images/projects/sonic-gui.png';
+// import jobTrackerImage from '../assets/images/projects/job-tracker.png';
+// import aiPortfolioImage from '../assets/images/projects/ai-portfolio.png';
 import bikoParkImage from '../assets/images/projects/biko-park.png';
 import chessImage from '../assets/images/projects/oop-chess.png';
 import bubbleImage from '../assets/images/projects/bubble.png';
 import sortImage from '../assets/images/projects/sort.png';
 import memeImage from '../assets/images/projects/2oolameme.png';
 import modelImage from '../assets/images/projects/model.png';
+import { te } from 'date-fns/locale';
 
 export const loadProject = async (slug) => {
   try {
     const projects = {
+      'sonic-gui': {
+        slug: 'sonic-gui',
+        title: 'SONiC-GUI',
+        description: 'Graphical and AI-assisted management system for the SONiC network operating system.',
+        longDescription: `SONiC-GUI is a large-scale, production-oriented project designed to simplify and modernize 
+  SONiC network administration. Its foundation is a React-based graphical interface paired with a modular FastAPI backend, 
+  enabling real-time monitoring, VLAN and port management, and system health visualization.  
+
+  In addition to the GUI, SONiC-GUI integrates a custom Gemini-powered chatbot that allows administrators to 
+  perform operations through natural language. Tasks such as creating VLANs, checking port states, or retrieving 
+  device health can be triggered via conversational commands, making network management faster and more intuitive.  
+
+  The backend leverages Redis for real-time state management, TinyDB for lightweight persistence, and secure 
+  SSH communication. SONiC-GUI also incorporates CI/CD pipelines with Docker and GitHub Actions, as well as 
+  exploratory integrations with LangChain and MCP, extending it toward next-generation network automation.`,
+        technologies: [
+          'Gemini API ',
+          'LangChain ',
+          'MCP',
+          'FastAPI ',
+          'Redis',
+          'TinyDB',
+          'React ',
+          'WebSockets',
+          'SSH ',
+          'Docker', 'GitHub Actions '
+        ],
+        github: 'https://github.com/omaaartamer/SONiC-GUI-Frontend',
+        github2: 'https://github.com/omaaartamer/SONiC-GUI-Backend',
+        features: [
+          'Graphical dashboard for SONiC administration',
+          'Authentication with WebSockets and JWT tokens',
+          'Real-time operational and administrative status monitoring',
+          'VLAN management with full CRUD operations',
+          'Port operations with live device feedback',
+          'System health metrics (speed, usage, temperature, fans, PSU)',
+          'Gemini-powered chatbot for natural language operations',
+          'FastAPI backend with Redis and TinyDB integration',
+          'CI/CD pipelines using Docker and GitHub Actions',
+          'Experimental AI automation via LangChain and MCP'
+        ],
+        challenges: [
+          'Synchronizing real-time networking data with frontend components',
+          'Ensuring secure SSH and WebSocket communications',
+          'Balancing lightweight persistence (TinyDB) with real-time needs (Redis)',
+          'Integrating Gemini chatbot to safely trigger device operations from natural language',
+          'Building scalable modular backend endpoints with FastAPI',
+          'Experimenting with emerging AI frameworks (LangChain, MCP) in production-like systems'
+        ],
+        primaryColor: '#fd6a1bff',
+        secondaryColor: '#fd6a1bff',
+        textOnPrimary: '#ffffff',
+        textOnSecondary: '#ffffff',
+        background: '#ffffffff',
+        cardBackground: '#ffffffff',
+        cardBorder: '#fd6a1bff',
+        image: sonicGuiImage
+      },
+
+      'job-tracker': {
+        slug: 'job-tracker',
+        title: 'Job Application Tracker',
+        description: 'Cross-platform system to track and manage job applications with web, mobile, and extension support.',
+        longDescription: 'The Job Application Tracking System helps users manage and organize their job hunt across multiple platforms. It includes a web app, mobile app, and browser extension, all powered by a FastAPI backend and Firebase (Auth + Firestore). Users can save jobs, mark status updates, and analyze application trends from a central dashboard.',
+        technologies: ['React', 'TypeScript', 'Vite', 'FastAPI', 'Firebase Auth', 'Firestore', 'React Native'],
+        primaryColor: '#20aae4',
+        secondaryColor: '#20aae4',
+        textOnPrimary: '#ffffff',
+        textOnSecondary: '#ffffff',
+        background: '#ffffff',
+        cardBackground: '#ffffff',
+        cardBorder: '#20aae4',
+        // image: jobTrackerImage,
+        github: 'https://github.com/lleoparden/job-tracker',
+        features: [
+          'Centralized job tracking dashboard',
+          'Web app, mobile app, and browser extension',
+          'Firebase authentication and Firestore backend',
+          'Status updates with filters and search',
+          'Export/Import functionality (CSV/JSON)',
+          'Analytics and success rate visualization'
+        ],
+        challenges: [
+          'Designing a unified backend for three platforms',
+          'Integrating Firebase Auth securely with FastAPI',
+          'Building a seamless browser extension workflow',
+          'Synchronizing real-time updates across platforms',
+          'Planning Gmail integration for auto-status detection'
+        ]
+      },
+
+      'ai-portfolio-builder': {
+        slug: 'ai-portfolio-builder',
+        title: 'AI Portfolio Builder',
+        description: 'An AI-powered tool that generates personalized developer portfolios.',
+        longDescription: 'The AI Portfolio Builder is a project that leverages AI to automatically generate and customize developer portfolios. Users provide details such as skills, projects, and experiences, and the system creates a professional portfolio website with clean design, responsive layout, and content suggestions powered by AI.',
+        technologies: ['React', 'TypeScript', 'TailwindCSS', 'FastAPI', 'OpenAI API', 'Firebase'],
+        primaryColor: '#8b5cf6',
+        secondaryColor: '#8b5cf6',
+        textOnPrimary: '#ffffff',
+        textOnSecondary: '#ffffff',
+        background: '#ffffff',
+        cardBackground: '#ffffff',
+        cardBorder: '#8b5cf6',
+        // image: aiPortfolioImage,
+        github: 'https://github.com/lleoparden/ai-portfolio-builder',
+        features: [
+          'AI-assisted portfolio content generation',
+          'Responsive and modern web design',
+          'Dynamic project and skill sections',
+          'Customizable themes and layouts',
+          'FastAPI backend integration with AI models'
+        ],
+        challenges: [
+          'Integrating AI content generation seamlessly',
+          'Designing modular templates for portfolio creation',
+          'Balancing automation with user customization',
+          'Maintaining responsive design across devices',
+          'Handling API limits and performance optimizations'
+        ]
+      },
+
+      'chat-application-bubble': {
+        slug: 'chat-application-bubble',
+        title: 'Chat Application (Bubble)',
+        description: 'A full-featured chat app with real-time messaging, stories, and media sharing.',
+        longDescription: 'Bubble is a modern chat application allowing live text and voice messaging, media sharing, group chats, and temporary story features, all built with security and ease-of-use in mind.',
+        technologies: ['Kotlin', 'Firebase', 'Firebase Realtime Database', 'Firebase Authentication', 'Android Studio', 'Material Design', 'MVVM Architecture'],
+        primaryColor: '#cbbde3',
+        secondaryColor: '#09090a',
+        textOnPrimary: '#ffffff',
+        textOnSecondary: '#2d1810',
+        background: '#1a0f0a',
+        cardBackground: '#2d1810',
+        cardBorder: '#cbbde3',
+        image: bubbleImage,
+        github: 'https://github.com/lleoparden/Chat_Application',
+        demo: 'https://lleoparden.github.io/Bubble_website/',
+        features: [
+          'Real-time text and voice messaging',
+          'Story sharing and group chat features',
+          'Firebase integration for auth and storage'
+        ],
+        challenges: [
+          'Implementing real-time syncing with Firebase',
+          'Ensuring privacy and secure messaging',
+          'Designing intuitive mobile UX'
+        ]
+      },
+
+      '2ool-a-meme': {
+        slug: '2ool-a-meme',
+        title: '2ool a Meme App',
+        description: 'An app for a meme-based game brand featuring e-commerce and live chat.',
+        longDescription: 'The 2ool a Meme app integrates features like a real-time chat room and an e-commerce page, supporting the branding and merchandising of the game brand.',
+        technologies: ['Kotlin', 'Firebase', 'Firebase Firestore', 'Firebase Storage', 'Android Studio', 'MVVM Architecture', 'Retrofit', 'Glide'],
+        primaryColor: '#20aae4',
+        secondaryColor: '#ffffff',
+        textOnPrimary: '#ffffff',
+        textOnSecondary: '#2d1810',
+        background: '#1a0f0a',
+        cardBackground: '#2d1810',
+        cardBorder: '#20aae4',
+        image: memeImage,
+        github: 'https://github.com/lleoparden/2ool_a_meme',
+        demo: 'https://2oolameme.com/',
+        features: [
+          'Live chat community features',
+          'E-commerce functionality',
+          'Firebase backend for auth and data'
+        ],
+        challenges: [
+          'Combining real-time and e-commerce features',
+          'Designing for performance across multiple devices',
+          'Managing user data securely with Firebase'
+        ]
+      },
+
       'biko-park': {
         slug: 'biko-park',
         title: 'Biko Park',
@@ -36,6 +218,7 @@ export const loadProject = async (slug) => {
           'Polishing player interactions for a smooth experience'
         ]
       },
+
       'oop-chess': {
         slug: 'oop-chess',
         title: 'OOP Chess',
@@ -63,88 +246,7 @@ export const loadProject = async (slug) => {
           'Implementing the bot using alpha beta pruning minmax'
         ]
       },
-      'chat-application-bubble': {
-        slug: 'chat-application-bubble',
-        title: 'Chat Application (Bubble)',
-        description: 'A full-featured chat app with real-time messaging, stories, and media sharing.',
-        longDescription: 'Bubble is a modern chat application allowing live text and voice messaging, media sharing, group chats, and temporary story features, all built with security and ease-of-use in mind.',
-        technologies: ['Kotlin', 'Firebase', 'Firebase Realtime Database', 'Firebase Authentication', 'Android Studio', 'Material Design', 'MVVM Architecture'],
-        primaryColor: '#cbbde3',
-        secondaryColor: '#09090a',
-        textOnPrimary: '#ffffff',
-        textOnSecondary: '#2d1810',
-        background: '#1a0f0a',
-        cardBackground: '#2d1810',
-        cardBorder: '#cbbde3',
-        image: bubbleImage,
-        github: 'https://github.com/lleoparden/Chat_Application',
-        demo: 'https://lleoparden.github.io/Bubble_website/',
-        features: [
-          'Real-time text and voice messaging',
-          'Story sharing and group chat features',
-          'Firebase integration for auth and storage'
-        ],
-        challenges: [
-          'Implementing real-time syncing with Firebase',
-          'Ensuring privacy and secure messaging',
-          'Designing intuitive mobile UX'
-        ]
-      },
-      '2ool-a-meme': {
-        slug: '2ool-a-meme',
-        title: '2ool a Meme App',
-        description: 'An app for a meme-based game brand featuring e-commerce and live chat.',
-        longDescription: 'The 2ool a Meme app integrates features like a real-time chat room and an e-commerce page, supporting the branding and merchandising of the game brand.',
-        technologies: ['Kotlin', 'Firebase', 'Firebase Firestore', 'Firebase Storage', 'Android Studio', 'MVVM Architecture', 'Retrofit', 'Glide'],
-        primaryColor: '#20aae4',
-        secondaryColor: '#ffffff',
-        textOnPrimary: '#ffffff',
-        textOnSecondary: '#2d1810',
-        background: '#1a0f0a',
-        cardBackground: '#2d1810',
-        cardBorder: '#20aae4',
-        image: memeImage,
-        github: 'https://github.com/lleoparden/2ool_a_meme',
-        demo: 'https://2oolameme.com/',
-        features: [
-          'Live chat community features',
-          'E-commerce functionality',
-          'Firebase backend for auth and data'
-        ],
-        challenges: [
-          'Combining real-time and e-commerce features',
-          'Designing for performance across multiple devices',
-          'Managing user data securely with Firebase'
-        ]
-      },
-      'sorting-visualizer': {
-        slug: 'sorting-visualizer',
-        title: 'Sorting Algorithm Visualizer',
-        description: 'A C++ application that visually demonstrates how common sorting algorithms work.',
-        longDescription: 'The Sorting Algorithm Visualizer is a desktop application that helps learners understand how different sorting algorithms function through animated visual feedback.',
-        technologies: ['C++', 'SFML', 'Object-Oriented Design', 'Visual Studio Code', 'Algorithm Design', 'Git'],
-        primaryColor: '#39ff14',
-        secondaryColor: '#00ff00',
-        textOnPrimary: '#00ff00',
-        textOnSecondary: '#2d1810',
-        background: '#1a0f0a',
-        cardBackground: '#111111',
-        cardBorder: '#00ff00',
-        image: sortImage,
-        github: 'https://github.com/lleoparden/sorting-visualizer',
-        features: [
-          'Visual representation of sorting algorithms',
-          'Supports Bubble Sort, Selection Sort, Insertion Sort, etc.',
-          'Real-time bar animations for comparison and swaps',
-          'Speed adjustment for animation',
-          'Modular code for adding new algorithms'
-        ],
-        challenges: [
-          'Implementing smooth real-time visual updates',
-          'Maintaining performance with SFML rendering',
-          'Designing reusable sorting logic with animation hooks'
-        ]
-      },
+
       'obesity-prediction-model': {
         slug: 'obesity-prediction-model',
         title: 'Obesity Prediction Model',
@@ -173,6 +275,35 @@ export const loadProject = async (slug) => {
           'Integrating scikit-learn model into a GUI app',
           'Ensuring accuracy across different input ranges'
         ]
+      },
+
+      'sorting-visualizer': {
+        slug: 'sorting-visualizer',
+        title: 'Sorting Algorithm Visualizer',
+        description: 'A C++ application that visually demonstrates how common sorting algorithms work.',
+        longDescription: 'The Sorting Algorithm Visualizer is a desktop application that helps learners understand how different sorting algorithms function through animated visual feedback.',
+        technologies: ['C++', 'SFML', 'Object-Oriented Design', 'Visual Studio Code', 'Algorithm Design', 'Git'],
+        primaryColor: '#39ff14',
+        secondaryColor: '#00ff00',
+        textOnPrimary: '#00ff00',
+        textOnSecondary: '#2d1810',
+        background: '#1a0f0a',
+        cardBackground: '#111111',
+        cardBorder: '#00ff00',
+        image: sortImage,
+        github: 'https://github.com/lleoparden/sorting-visualizer',
+        features: [
+          'Visual representation of sorting algorithms',
+          'Supports Bubble Sort, Selection Sort, Insertion Sort, etc.',
+          'Real-time bar animations for comparison and swaps',
+          'Speed adjustment for animation',
+          'Modular code for adding new algorithms'
+        ],
+        challenges: [
+          'Implementing smooth real-time visual updates',
+          'Maintaining performance with SFML rendering',
+          'Designing reusable sorting logic with animation hooks'
+        ]
       }
     };
 
@@ -186,21 +317,32 @@ export const loadProject = async (slug) => {
 export const loadAllProjects = () => {
   return [
     {
-      slug: 'biko-park',
-      title: 'Biko Park',
-      description: 'A multiplayer puzzle-platformer with creative cooperative gameplay.',
-      technologies: ['C++', 'SFML', 'Visual Studio Code'],
-      image: bikoParkImage,
-      github: 'https://github.com/lleoparden/Biko_Park',
-      demo: 'https://za3boot-productions.itch.io/biko-park'
+      slug: 'sonic-gui',
+      title: 'SONiC-GUI',
+      team_project: true,
+      description: 'Graphical and AI-assisted management system for the SONiC network operating system.',
+      technologies: ['React', 'FastAPI', 'Redis'],
+      image: sonicGuiImage,
+      github: 'https://github.com/omaaartamer/SONiC-GUI-Frontend',
+      github2: 'https://github.com/omaaartamer/SONiC-GUI-Backend'
     },
     {
-      slug: 'oop-chess',
-      title: 'OOP Chess',
-      description: 'A Java-based chess game with chaos mode and OOP design.',
-      technologies: ['Java', 'Java Swing', 'IntelliJ IDEA'],
-      image: chessImage,
-      github: 'https://github.com/lleoparden/oop-chess'
+      slug: 'job-tracker',
+      ongoing: true,
+      title: 'Job Application Tracker',
+      description: 'Cross-platform system to manage and track job applications.',
+      technologies: ['React', 'FastAPI', 'Firebase'],
+      // image: jobTrackerImage,
+      github: 'https://github.com/lleoparden/job-tracker'
+    },
+    {
+      slug: 'ai-portfolio-builder',
+      ongoing: true,
+      title: 'AI Portfolio Builder',
+      description: 'AI-powered tool for generating developer portfolios.',
+      technologies: ['React', 'FastAPI', 'AI'],
+      // image: aiPortfolioImage,
+      github: 'https://github.com/lleoparden/ai-portfolio-builder'
     },
     {
       slug: 'chat-application-bubble',
@@ -221,23 +363,45 @@ export const loadAllProjects = () => {
       demo: 'https://2oolameme.com/'
     },
     {
+      slug: 'biko-park',
+      title: 'Biko Park',
+      team_project: true,
+      description: 'A multiplayer puzzle-platformer with creative cooperative gameplay.',
+      technologies: ['C++', 'SFML', 'Visual Studio Code'],
+      image: bikoParkImage,
+      github: 'https://github.com/lleoparden/Biko_Park',
+      demo: 'https://za3boot-productions.itch.io/biko-park'
+    },
+    {
+      slug: 'oop-chess',
+      title: 'OOP Chess',
+      team_project: true,
+      description: 'A Java-based chess game with chaos mode and OOP design.',
+      technologies: ['Java', 'Java Swing', 'IntelliJ IDEA'],
+      image: chessImage,
+      github: 'https://github.com/lleoparden/oop-chess'
+    },
+    {
+      slug: 'obesity-prediction-model',
+      title: 'Obesity Prediction Model',
+      team_project: true,
+      description: 'A desktop app using machine learning to predict obesity levels based on user input.',
+      technologies: ['Python', 'Tkinter', 'Scikit-learn'],
+      image: modelImage,
+      github: 'https://github.com/lleoparden/Obesity_Prediction_model'
+    },
+    {
       slug: 'sorting-visualizer',
       title: 'Sorting Algorithm Visualizer',
       description: 'A desktop C++ visual tool for sorting algorithms like bubble and insertion sort.',
       technologies: ['C++', 'SFML', 'Visual Studio Code'],
       image: sortImage,
       github: 'https://github.com/lleoparden/sorting-visualizer'
-    },
-    {
-      slug: 'obesity-prediction-model',
-      title: 'Obesity Prediction Model',
-      description: 'A desktop app using machine learning to predict obesity levels based on user input.',
-      technologies: ['Python', 'Tkinter', 'Scikit-learn'],
-      image: modelImage,
-      github: 'https://github.com/lleoparden/Obesity_Prediction_model'
     }
   ];
 };
+
+
 
 export const loadSmallProjects = () => {
   return [

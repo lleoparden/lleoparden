@@ -76,6 +76,16 @@ const ProjectCard = ({ project, type = 'full' }) => {
         <h3 className="text-xl font-semibold text-white mb-2">
           {projectData.title}
         </h3>
+        {projectData.ongoing && (
+          <span className="inline-block bg-blue-600 text-white text-xs px-2 py-1 rounded-full mb-2">
+            Ongoing
+          </span>
+        )}
+        {projectData.team_project && (
+          <span className="inline-block bg-green-800 text-white text-xs px-2 py-1 rounded-full mb-2 ml-2">
+            Team Project
+          </span>
+        )}
 
         <p className="text-neutral-300 mb-4 line-clamp-3">
           {projectData.description}
@@ -106,6 +116,16 @@ const ProjectCard = ({ project, type = 'full' }) => {
                 <Github size={20} />
               </a>
             )}
+            {projectData.github2 && (
+            <a
+              href={projectData.github2}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-400 hover:text-white transition-colors"
+            >
+              <Github size={20} />
+            </a>
+          )}
             {projectData.demo && (
               <a
                 href={projectData.demo}

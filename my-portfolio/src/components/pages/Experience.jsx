@@ -8,14 +8,15 @@ import { Award, Calendar, ExternalLink } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Software Developer Intern',
-      organization: 'Orange Business',
-      duration: 'Ongoing',
-      year: 2025, 
-      description:
-        'Gained practical experience working on real-world software development projects in a professional tech environment.',
-      technologies: ['Software Development', 'Team Collaboration', 'Agile Practices']
-    },
+  title: 'Software Developer Intern',
+  organization: 'Orange Business – Network Software Factory (NSF) Team',
+  duration: '2025 (3 months)',
+  year: 2025,
+  description:
+    'Contributing as part of the NSF team to build and enhance network-oriented software solutions. Engaged in real-world development workflows, collaborative problem-solving, and delivering features aligned with enterprise needs.',
+  technologies: ['Network Software Development', 'Agile Practices', 'Team Collaboration', 'Problem-Solving']
+},
+
     {
       title: 'Job Shadowing',
       organization: 'EFG Hermes',

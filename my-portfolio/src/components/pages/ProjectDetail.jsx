@@ -132,23 +132,43 @@ const ProjectDetail = () => {
                 </motion.a>
               )}
               {project.github && (
-                <motion.a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-4 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105"
-                  style={{
-                    backgroundColor: customStyles.primaryColor,
-                    border: `2px solid ${project.secondaryColor}`,
-                    color: project.textOnPrimary
-                  }}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Github className="mr-2" size={20} />
-                  View Code
-                </motion.a>
-              )}
+                  <motion.a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-8 py-4 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105"
+                    style={{
+                      backgroundColor: customStyles.primaryColor,
+                      border: `2px solid ${project.secondaryColor}`,
+                      color: project.textOnPrimary
+                    }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Github className="mr-2" size={20} />
+                    {project.github2 ? "Frontend Code" : "View Code"}
+                  </motion.a>
+                )}
+
+                {project.github2 && (
+                  <motion.a
+                    href={project.github2}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-8 py-4 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105"
+                    style={{
+                      backgroundColor: customStyles.primaryColor,
+                      border: `2px solid ${project.secondaryColor}`,
+                      color: project.textOnPrimary
+                    }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Github className="mr-2" size={20} />
+                    Backend Code
+                  </motion.a>
+                )}
+
             </div>
 
             {/* Technologies */}
@@ -360,7 +380,7 @@ const ProjectDetail = () => {
                   {project.github && (
                     <div>
                       <h4 className="text-sm font-bold text-gray-400 mb-3 uppercase tracking-wider">
-                        Source Code
+                        {project.github2 ? "Source Code (frontend)" : "Source Code"}
                       </h4>
                       <a
                         href={project.github}
@@ -371,6 +391,22 @@ const ProjectDetail = () => {
                       >
                         {project.github}
                       </a>
+                    </div>
+                  )}
+                  {project.github2 && (
+                    <div>
+                      <h4 className="text-sm font-bold text-gray-400 mb-3 uppercase tracking-wider">
+                        Source Code (Backend)
+                      </h4>
+                      <a
+                        href={project.github2}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm break-all transition-all duration-300 hover:underline"
+                        style={{ color: project.secondaryColor }}
+                      >
+                        {project.github2}
+                      </a>  
                     </div>
                   )}
         
