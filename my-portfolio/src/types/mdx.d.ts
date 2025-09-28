@@ -3,3 +3,4 @@ declare module '*.mdx' {
   export default MDXComponent;
   export const frontMatter: any;
 }
+declare module '@mdx-js/rollup';
