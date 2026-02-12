@@ -7,6 +7,7 @@ import bubbleImage from '../assets/images/projects/bubble.png';
 import sortImage from '../assets/images/projects/sort.png';
 import memeImage from '../assets/images/projects/2oolameme.png';
 import modelImage from '../assets/images/projects/model.png';
+import fosImage from '../assets/images/projects/fos.png';
 import { te } from 'date-fns/locale';
 
 export const loadProject = async (slug) => {
@@ -70,6 +71,69 @@ export const loadProject = async (slug) => {
         cardBorder: '#fd6a1bff',
         image: sonicGuiImage
       },
+      'fos-operating-system': {
+  slug: 'fos-operating-system',
+  title: 'FOS Educational Operating System',
+  description: 'Modular educational operating system built from bootloader to user space, implementing core kernel subsystems and memory management.',
+  longDescription: `The FOS Operating System project is a full educational kernel built upon the FOS framework, 
+  designed to explore and implement the core mechanisms behind modern operating systems. 
+  Developed in C and targeting x86 architecture, the system walks through the complete OS lifecycle — 
+  from bootloading and low-level initialization to virtual memory management, scheduling, and user–kernel isolation.
+
+  The bootloader initializes CPU state and memory, loads the kernel into memory, and transfers execution control 
+  to the kernel initialization layer. The kernel then configures paging, interrupt handling, trap management, 
+  scheduling policies, and launches user-mode programs compiled within the system.
+
+  My primary contributions focused on dynamic kernel memory allocation and advanced page fault handling. 
+  I designed and integrated memory allocation mechanisms within the kernel heap and implemented fault handling logic 
+  across trap handlers and virtual memory layers to ensure safe recovery, isolation, and correctness under invalid memory access scenarios.
+
+  The system includes working set management, pagefile interaction, synchronization primitives (spinlocks, semaphores, sleep locks), 
+  privilege-level separation, and a structured system call interface enabling controlled communication between user and kernel space.
+
+  The entire OS was compiled with GCC and tested under the Bochs emulator, ensuring correct subsystem integration, 
+  concurrency safety, and modular extensibility across all kernel layers.`,
+  technologies: [
+    'C',
+    'x86 Architecture',
+    'GCC',
+    'Bochs Emulator',
+    'Paging',
+    'Virtual Memory',
+    'System Calls',
+    'CPU Scheduling',
+    'Synchronization Primitives'
+  ],
+  github: 'https://github.com/lleoparden/FOS_TEMPLATE',
+  features: [
+    'Custom bootloader and low-level CPU initialization',
+    'Kernel heap with dynamic memory allocation',
+    'User heap allocator and shared memory system',
+    'Virtual memory with paging and working set management',
+    'Advanced page fault handling and trap management',
+    'CPU scheduling and context switching',
+    'Synchronization primitives (spinlocks, semaphores, sleep locks)',
+    'System call interface for user–kernel communication',
+    'Privilege-level isolation between kernel and user space',
+    'Comprehensive testing and modular subsystem validation'
+  ],
+  challenges: [
+    'Designing safe and efficient dynamic memory allocation inside kernel space',
+    'Implementing correct page fault handling without breaking isolation guarantees',
+    'Managing working sets and page replacement policies',
+    'Synchronizing concurrent kernel operations using low-level primitives',
+    'Ensuring correct integration between bootloader, memory manager, and scheduler',
+    'Debugging low-level faults using Bochs and kernel tracing techniques'
+  ],
+  primaryColor: '#5a8ad8',
+  secondaryColor: '#5a8ad8',
+  textOnPrimary: '#ffffff',
+  textOnSecondary: '#ffffff',
+  background: '#ffffffff',
+  cardBackground: '#ffffffff',
+  cardBorder: '#5a8ad8',
+  image: fosImage
+},
 
       'job-tracker': {
         slug: 'job-tracker',
@@ -325,6 +389,15 @@ export const loadAllProjects = () => {
       image: sonicGuiImage,
       github: 'https://github.com/omaaartamer/SONiC-GUI-Frontend',
       github2: 'https://github.com/omaaartamer/SONiC-GUI-Backend'
+    },
+        {
+      slug: 'fos-operating-system',
+      title: 'FOS Educational Operating System',
+      team_project: true,
+      description: 'Educational x86 operating system implementing memory management, scheduling, fault handling, and kernel–user isolation.',
+      technologies: ['C', 'x86', 'Virtual Memory', 'Paging', 'Scheduling'],
+      image: fosImage,
+      github: 'https://github.com/lleoparden/FOS_TEMPLATE'
     },
     {
       slug: 'job-tracker',
