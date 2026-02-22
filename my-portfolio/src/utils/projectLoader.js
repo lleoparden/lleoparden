@@ -17,17 +17,24 @@ export const loadProject = async (slug) => {
         slug: 'sonic-gui',
         title: 'SONiC-GUI',
         description: 'Graphical and AI-assisted management system for the SONiC network operating system.',
-        longDescription: `SONiC-GUI is a large-scale, production-oriented project designed to simplify and modernize 
-  SONiC network administration. Its foundation is a React-based graphical interface paired with a modular FastAPI backend, 
-  enabling real-time monitoring, VLAN and port management, and system health visualization.  
+        longDescription: `SONiC-GUI is a production-oriented network management platform built to modernize administration of SONiC-based switches. 
+The system combines a modular FastAPI backend with a React-based interface to enable structured VLAN/port configuration, 
+real-time operational monitoring, and system health visualization.
 
-  In addition to the GUI, SONiC-GUI integrates a custom Gemini-powered chatbot that allows administrators to 
-  perform operations through natural language. Tasks such as creating VLANs, checking port states, or retrieving 
-  device health can be triggered via conversational commands, making network management faster and more intuitive.  
+The backend is architected using a layered service design that separates routing, business logic, and persistence concerns, 
+improving maintainability and scalability. Communication with SONiC devices occurs through RESTCONF and secure SSH channels 
+(AsyncSSH), enabling both structured API-driven operations and CLI-based execution.
 
-  The backend leverages Redis for real-time state management, TinyDB for lightweight persistence, and secure 
-  SSH communication. SONiC-GUI also incorporates CI/CD pipelines with Docker and GitHub Actions, as well as 
-  exploratory integrations with LangChain and MCP, extending it toward next-generation network automation.`,
+To enhance performance and reliability, Redis is used for caching frequently accessed network state (ports, VLANs) and 
+implementing rate limiting, while TinyDB provides lightweight persistence for user management. 
+
+Beyond traditional GUI functionality, SONiC-GUI integrates an AI-assisted operations layer powered by Gemini 2.5 Flash. 
+The system implements a retrieval-augmented workflow using HuggingFace embeddings and ChromaDB to provide contextual 
+awareness over SONiC documentation. A tool-based orchestration layer validates and executes safe network actions 
+triggered via natural language.
+
+The application is containerized with Docker and supported by GitHub Actions CI pipelines for linting and automated quality checks, 
+demonstrating production-ready DevOps practices.`,
         technologies: [
           'Gemini API ',
           'LangChain ',
@@ -43,25 +50,26 @@ export const loadProject = async (slug) => {
         github: 'https://github.com/omaaartamer/SONiC-GUI-Frontend',
         github2: 'https://github.com/omaaartamer/SONiC-GUI-Backend',
         features: [
-          'Graphical dashboard for SONiC administration',
-          'Authentication with WebSockets and JWT tokens',
-          'Real-time operational and administrative status monitoring',
-          'VLAN management with full CRUD operations',
-          'Port operations with live device feedback',
-          'System health metrics (speed, usage, temperature, fans, PSU)',
-          'Gemini-powered chatbot for natural language operations',
-          'FastAPI backend with Redis and TinyDB integration',
-          'CI/CD pipelines using Docker and GitHub Actions',
-          'Experimental AI automation via LangChain and MCP'
-        ],
+  'Role-based authentication with JWT and protected API routes',
+  'Layered FastAPI backend with structured service separation',
+  'Real-time VLAN and port CRUD operations via RESTCONF',
+  'Secure CLI execution using AsyncSSH',
+  'Redis-backed caching and rate limiting for performance and protection',
+  'Operational and administrative port status monitoring',
+  'System health visualization (CPU, memory, temperature, PSU, fan metrics)',
+  'Retrieval-Augmented Generation (RAG) chatbot using HuggingFace embeddings + ChromaDB',
+  'Tool-orchestrated Gemini integration for safe natural-language network actions',
+  'Dockerized deployment with CI automation via GitHub Actions'
+],
         challenges: [
-          'Synchronizing real-time networking data with frontend components',
-          'Ensuring secure SSH and WebSocket communications',
-          'Balancing lightweight persistence (TinyDB) with real-time needs (Redis)',
-          'Integrating Gemini chatbot to safely trigger device operations from natural language',
-          'Building scalable modular backend endpoints with FastAPI',
-          'Experimenting with emerging AI frameworks (LangChain, MCP) in production-like systems'
-        ],
+  'Maintaining data consistency between real-time switch state and frontend UI components',
+  'Designing secure SSH and RESTCONF communication channels without exposing device credentials',
+  'Balancing Redis caching with source-of-truth switch state to prevent stale network configurations',
+  'Preventing unsafe or malformed AI-generated network commands through validation layers',
+  'Structuring backend services for extensibility while avoiding tight coupling',
+  'Managing async concurrency and I/O-bound operations in FastAPI',
+  'Experimenting with emerging AI orchestration frameworks (LangChain, MCP) while preserving system stability'
+],
         primaryColor: '#fd6a1bff',
         secondaryColor: '#fd6a1bff',
         textOnPrimary: '#ffffff',
