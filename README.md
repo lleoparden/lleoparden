@@ -9,18 +9,6 @@
 
 I love creating modern, responsive web and mobile applications with clean code and beautiful design. From building games in SFML to architecting full-stack web platforms and secure chat apps, I enjoy turning ideas into digital reality.
 
-- 🔭 Currently building:  
-  - A secure, offline-first **chat app** with custom notifications, local encryption, and Realtime DB
-  - An **obesity risk assessment desktop app** with ML integration (Tkinter + CustomTkinter)
-
-- 🌐 Recently launched:  
-  - A fully custom **React + Vite portfolio site** with dark mode, Tailwind, Framer Motion, and GitHub Pages
-
-- 🧠 Learning:  
-  - OS development in C  
-  - Advanced Firebase & Android storage  
-  - System design & cloud deployment
-
 ---
 
 ## 🛠️ Tech Stack & Tools
