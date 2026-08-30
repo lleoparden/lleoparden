@@ -15,6 +15,21 @@ const baseColors = {
 
 export const loadProject = async (slug) => {
   const projects = {
+    trustflow: {
+      slug: 'trustflow',
+      title: 'TrustFlow',
+      description: 'Current flagship — a co-owned product being built end to end with the project’s other founder.',
+      longDescription: 'TrustFlow is current product work that I co-own and help build end to end alongside the project’s other founder. My contribution spans product development, full-stack implementation, and UI/UX work. It is intentionally presented as current flagship work rather than as a finished project.',
+      technologies: ['Product Development', 'Full-Stack Development', 'UI/UX'],
+      github: 'https://github.com/abyssrift/TrustFlow',
+      features: [
+        'End-to-end product development',
+        'Full-stack implementation',
+        'Product and UI/UX contribution',
+        'Co-owned with the project’s other founder',
+      ],
+      ...baseColors,
+    },
     'local-rag-system': {
       slug: 'local-rag-system',
       title: 'Local RAG System',
@@ -161,8 +176,17 @@ export const loadProject = async (slug) => {
 
 export const loadAllProjects = () => [
   {
+    slug: 'trustflow',
+    title: 'TrustFlow',
+    status: 'Current flagship',
+    description: 'Co-owned product work spanning product development, full-stack implementation, and UI/UX.',
+    technologies: ['Product Development', 'Full-Stack Development', 'UI/UX'],
+    github: 'https://github.com/abyssrift/TrustFlow',
+  },
+  {
     slug: 'local-rag-system',
     title: 'Local RAG System',
+    status: 'Completed',
     description: 'Done — containerized local document ingestion, retrieval, and question answering.',
     technologies: ['FastAPI', 'ChromaDB', 'Ollama', 'Docker'],
     github: 'https://github.com/lleoparden/RAG-NLP-project',
@@ -171,6 +195,7 @@ export const loadAllProjects = () => [
     slug: 'olympus',
     ongoing: true,
     title: 'Olympus',
+    status: 'Ongoing · paused',
     description: 'Ongoing — currently paused and expected to resume; a self-hosted local AI stack for single-GPU workflows.',
     technologies: ['Python', 'JavaScript', 'Ollama', 'Docker'],
     github: 'https://github.com/lleoparden/olympus',
@@ -178,12 +203,14 @@ export const loadAllProjects = () => [
   {
     slug: 'sentinelcheck',
     title: 'SentinelCheck',
+    status: 'Planned',
     description: 'Planned — a graduation capstone concept at the planning stage, not a built product.',
     technologies: ['React Native', 'Supabase'],
   },
   {
     slug: 'job-tracker',
     title: 'Job Application Tracking System',
+    status: 'In progress',
     description: 'In progress — a multi-platform tracker with a FastAPI backend and Firebase.',
     technologies: ['React Native', 'FastAPI', 'Firebase'],
     github: 'https://github.com/lleoparden/job-tracker',
@@ -191,6 +218,7 @@ export const loadAllProjects = () => [
   {
     slug: 'kotlin-chat-application',
     title: 'Kotlin Chat Application',
+    status: 'Completed',
     description: 'Done — an Android chat app with local persistence, optional Firebase sync, and offline support.',
     technologies: ['Kotlin', 'Android', 'Firebase'],
     image: bubbleImage,
@@ -199,6 +227,7 @@ export const loadAllProjects = () => [
   {
     slug: 'oop-chess',
     title: 'OOP Chess',
+    status: 'Completed',
     description: 'Done — an object-oriented Java chess game with a graphical interface and chaos mode.',
     technologies: ['Java', 'JavaFX'],
     image: chessImage,
@@ -207,6 +236,7 @@ export const loadAllProjects = () => [
   {
     slug: 'sonic-gui',
     title: 'SONiC-GUI',
+    status: 'Completed',
     description: 'Done — an AI-assisted network-management platform for SONiC OS.',
     technologies: ['React', 'FastAPI', 'Redis', 'WebSockets'],
     image: sonicGuiImage,
@@ -214,6 +244,7 @@ export const loadAllProjects = () => [
   {
     slug: 'fos-educational-os',
     title: 'FOS Educational OS',
+    status: 'Completed',
     description: 'Done — educational x86 kernel development covering memory, faults, scheduling, and isolation.',
     technologies: ['C', 'x86', 'Virtual Memory'],
     image: fosImage,
@@ -222,6 +253,7 @@ export const loadAllProjects = () => [
   {
     slug: 'odysseus',
     title: 'Odysseus — Open-Source Contributions',
+    status: 'Contribution',
     description: 'Selected merged contributions to someone else’s open-source AI workspace; not a project I own.',
     technologies: ['Python', 'Open Source'],
     github: 'https://github.com/arcahyadi/odysseus',

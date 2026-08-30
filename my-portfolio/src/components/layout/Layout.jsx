@@ -2,12 +2,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import RouteMetadata from './RouteMetadata';
 
 const Layout = ({ children }) => {
   const location = useLocation();
 
   return (
     <div className="min-h-screen bg-zinc-900 text-zinc-900 flex flex-col">
+      <RouteMetadata />
       <Navbar />
       <main className="flex-grow">
         <AnimatePresence mode="wait">
