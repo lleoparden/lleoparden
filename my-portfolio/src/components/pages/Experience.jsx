@@ -7,44 +7,46 @@ import { Award, Calendar } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-  title: 'Software Developer Intern',
-  organization: 'Orange Business – Network Software Factory (NSF) Team',
-  duration: '2025 (3 months)',
-  year: 2025,
-  description:
-    'Contributing as part of the NSF team to build and enhance network-oriented software solutions. Engaged in real-world development workflows, collaborative problem-solving, and delivering features aligned with enterprise needs.',
-  technologies: ['Network Software Development', 'Agile Practices', 'Team Collaboration', 'Problem-Solving']
-},
-
-    {
-      title: 'Job Shadowing',
-      organization: 'EFG Hermes',
-      duration: '2024',
-      year: 2024,
+      title: 'Co-Owner',
+      organization: 'TrustFlow',
+      duration: 'Ongoing',
       description:
-        'Observed fintech and investment banking operations, participated in Q&A sessions with professionals to understand the financial technology landscape.',
-      technologies: ['Fintech', 'IT'],
+        'Co-own and help build TrustFlow end to end alongside the project’s other founder, contributing across product features and UI/UX.',
+      technologies: ['Product Development', 'Full-Stack Development', 'UI/UX'],
     },
     {
-    title: 'Enactus ASU – Media Member',
-    organization: 'Enactus',
-    duration: '2023',
-    year: 2023,
-    description:
-      'Contributed to a recycling awareness campaign as part of the media team, focusing on content creation and digital outreach.',
-    technologies: [
-      'Media Outreach',
-      'Teamwork',
-      'Content Creation',
-      'Adobe Photoshop',
-      'Adobe Illustrator',
-      'Adobe Premiere Pro',
-      'Adobe After Effects'
-    ],
+      title: 'Software Development Intern',
+      organization: 'Orange Business – Network Software Factory Team',
+      duration: 'Jul–Oct 2025 & Jul–Aug 2026',
+      description:
+        'Contributed to network-oriented software solutions across two internship stints and worked in real-world development workflows delivering features aligned with enterprise needs.',
+      technologies: ['Network Software Development', 'Agile Practices', 'Team Collaboration'],
     },
-  ].sort((a, b) => b.year - a.year); 
+    {
+      title: 'Freelance Web Developer',
+      organization: 'Self-employed',
+      duration: 'Ongoing',
+      description:
+        'Build web applications for clients using React, Python, and FastAPI, covering frontend implementation, backend APIs, and data integration.',
+      technologies: ['React', 'Python', 'FastAPI'],
+    },
+    {
+      title: 'IT Job Shadowing',
+      organization: 'EFG Hermes',
+      duration: 'Aug 2024',
+      description:
+        'Observed fintech and investment banking operations and took part in Q&A sessions with professionals on the financial technology landscape.',
+      technologies: ['Fintech', 'Information Technology'],
+    },
+  ];
 
   const certificates = [
+    {
+      title: 'ECPC Qualification Round – Ranked 68th',
+      issuer: 'Egyptian Collegiate Programming Contest',
+      year: '68th',
+      technologies: ['Problem-Solving', 'Algorithms'],
+    },
     {
       title: 'Java Masterclass Certificate',
       issuer: 'Udemy',
@@ -58,18 +60,12 @@ const Experience = () => {
       technologies: ['PHP', 'MySQL', 'Laravel', 'Bootstrap', 'JavaScript'],
     },
     {
-      title: 'Biko Park Competition Placement',
-      issuer: 'Ain Shams University',
-      year: 2024,
-      technologies: ['C++', 'SFML', 'Game Development'],
-    },
-    {
       title: 'CS50x: Introduction to Computer Science',
       issuer: 'HarvardX (edX)',
       year: 2023,
       technologies: ['C', 'Python', 'JavaScript', 'HTML', 'CSS', 'SQL'],
     },
-  ].sort((a, b) => b.year - a.year); 
+  ];
 
   return (
     <div className="py-20 px-4">
@@ -117,7 +113,7 @@ const Experience = () => {
           <AnimatedWrapper delay={0.2}>
             <div className="bg-zinc-800 rounded-lg p-6 border border-gray-700">
               <h3 className="text-2xl font-semibold text-white mb-6">
-                Certificates
+                Certificates & Achievement
               </h3>
               <div className="space-y-4">
                 {certificates.map((cert, idx) => (

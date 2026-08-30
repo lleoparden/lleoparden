@@ -15,7 +15,7 @@ const Skills = () => {
   {
     category: 'Mobile Development',
     skills: [
-      'Android (XML + Kotlin)', 'Firebase Auth',
+      'React Native', 'Android (XML + Kotlin)', 'Firebase Auth',
       'Firestore', 'Firebase Realtime DB',
       'Push Notifications', 'Local JSON Storage'
     ]
@@ -59,8 +59,8 @@ const Skills = () => {
   {
     category: 'AI & Machine Learning',
     skills: [
-      'Scikit-learn', 'Pandas', 'NumPy',
-      'Ensemble Learning', 'Tkinter GUI Integration'
+      'RAG', 'ChromaDB', 'Ollama', 'LangChain',
+      'Embeddings', 'Scikit-learn', 'Pandas', 'NumPy'
     ]
   },
   {
