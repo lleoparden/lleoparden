@@ -5,6 +5,7 @@ import { ArrowLeft, ExternalLink, Github, CheckCircle, Play } from 'lucide-react
 import { loadProject } from '../../utils/projectLoader';
 import TechBadge from '../ui/TechBadge';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
+import ProjectCardHeader from '../ui/ProjectCardHeader';
 
 const ProjectDetail = () => {
   const { slug } = useParams();
@@ -312,23 +313,12 @@ const ProjectDetail = () => {
               </AnimatedWrapper>
             )}
         
-            {/* Project Image */}
-            {project.image && (
-              <AnimatedWrapper delay={0.6}>
-                <div className="mb-12">
-                  <motion.img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full rounded-2xl shadow-2xl"
-                    style={{
-                      boxShadow: `0 20px 60px ${project.primaryColor}20`
-                    }}
-                    whileHover={{ scale: 1.02 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </div>
-              </AnimatedWrapper>
-            )}
+            <AnimatedWrapper delay={0.6}>
+              <ProjectCardHeader
+                project={project}
+                className="rounded-2xl border border-neutral-700 shadow-2xl"
+              />
+            </AnimatedWrapper>
           </div>
           
           {/* Right Column - Sidebar Info */}
