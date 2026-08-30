@@ -1,10 +1,8 @@
-import React from 'react';
 import {
   Code2, Database, Settings, Paintbrush, Terminal, BrainCog, 
   FileText, FileCode2, Globe, Cpu, Users, Monitor, Package,
   Wrench, Layers, GitBranch, BookOpen, Smartphone, Shield, Cloud,
-  Bell, Lock, Zap, Layout, Workflow, Lightbulb, Target, Clock,
-  Server, Key
+  Bell, Lock, Zap, Layout, Workflow, Lightbulb, Clock
 } from 'lucide-react';
 
 const TechBadge = ({ tech, size = 'md', color = 'gray' }) => {

@@ -1,9 +1,8 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '../ui/SectionHeader';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
 import TechBadge from '../ui/TechBadge';
-import { Award, Calendar, ExternalLink } from 'lucide-react';
+import { Award, Calendar } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
@@ -136,17 +135,6 @@ const Experience = () => {
                         <TechBadge key={techIdx} tech={tech} size="sm" />
                       ))}
                     </div>
-                    {(cert.image || cert.link) && (
-                      <div className="flex justify-end">
-                        <button
-                          onClick={() => handleViewClick(cert)}
-                          className="inline-flex items-center px-3 py-1.5 text-xs font-medium text-indigo-400 bg-indigo-900/30 rounded-md hover:bg-indigo-900/50 transition-colors duration-200"
-                        >
-                          <ExternalLink size={12} className="mr-1" />
-                          View Certificate
-                        </button>
-                      </div>
-                    )}
                   </motion.div>
                 ))}
               </div>
