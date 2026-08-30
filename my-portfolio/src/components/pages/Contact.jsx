@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Twitter ,Facebook, Instagram} from 'lucide-react';
+import { Github, Linkedin, Mail, Facebook, Instagram } from 'lucide-react';
 import SectionHeader from '../ui/SectionHeader';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
 

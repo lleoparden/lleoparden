@@ -8,7 +8,6 @@ import sortImage from '../assets/images/projects/sort.png';
 import memeImage from '../assets/images/projects/2oolameme.png';
 import modelImage from '../assets/images/projects/model.png';
 import fosImage from '../assets/images/projects/fos.png';
-import { te } from 'date-fns/locale';
 
 export const loadProject = async (slug) => {
   try {
