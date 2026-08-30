@@ -24,13 +24,13 @@ const Home = () => {
 
         <AnimatedWrapper delay={0.3}>
           <p className="text-xl md:text-2xl text-neutral-400 mb-8 max-w-2xl mx-auto">
-            A Third-Year cs student
+            Computer Science Student & Software Developer
           </p>
         </AnimatedWrapper>
 
         <AnimatedWrapper delay={0.6}>
           <p className="text-lg text-neutral-500 mb-12 max-w-3xl mx-auto">
-            I specialize in developing responsive web and mobile apps and crafting intuitive UIs. My goal is to turn complexity into seamless, impactful digital products.
+            Studying at Ain Shams University (expected 2027) and building full-stack applications, backend systems, and local AI/RAG tooling.
           </p>
         </AnimatedWrapper>
 

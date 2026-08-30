@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Twitter ,Facebook, Instagram} from 'lucide-react';
+import { Github, Mail } from 'lucide-react';
 import SectionHeader from '../ui/SectionHeader';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
 
@@ -8,10 +8,10 @@ const Contact = () => {
   const contactLinks = [
   {
     name: 'Email',
-    href: 'mailto:mostafa.ahmed.nabil.eid@gmail.com',
+    href: 'mailto:most.eid.31@gmail.com',
     icon: Mail,
     color: 'text-red-400 hover:text-red-300',
-    description: 'mostafa.ahmed.nabil.eid@gmail.com'
+    description: 'most.eid.31@gmail.com'
   },
   {
     name: 'GitHub',
@@ -19,27 +19,6 @@ const Contact = () => {
     icon: Github,
     color: 'text-gray-400 hover:text-white',
     description: '@lleoparden'
-  },
-  {
-    name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/mostafa-eid06/',
-    icon: Linkedin,
-    color: 'text-blue-400 hover:text-blue-300',
-    description: 'linkedin.com/in/mostafa-eid06'
-  },
-  {
-    name: 'Facebook',
-    href: 'https://www.facebook.com/mostafa.ahmedeid.5',
-    icon: Facebook,
-    color: 'text-blue-500 hover:text-blue-400',
-    description: 'facebook.com/mostafa.ahmedeid.5'
-  },
-  {
-    name: 'Instagram',
-    href: 'https://www.instagram.com/mostafa_eid06/',
-    icon: Instagram,
-    color: 'text-pink-400 hover:text-pink-300',
-    description: '@mostafa_eid06'
   }
 ];
 
@@ -55,8 +34,7 @@ const Contact = () => {
         <AnimatedWrapper>
           <div className="text-center mb-12">
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities, interesting projects, 
-              or just having a chat about technology and development.
+              Based in New Cairo, Cairo, Egypt. I’m open to discussing software development opportunities, practical AI tooling, and interesting product work.
             </p>
           </div>
         </AnimatedWrapper>
