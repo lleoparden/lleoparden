@@ -20,7 +20,7 @@ Computer Science student at Ain Shams University (Faculty of Computer and Inform
 | [Job Application Tracking System](https://github.com/lleoparden/job-tracker) | React Native, FastAPI, Firebase | In progress |
 | [Kotlin Chat Application](https://github.com/lleoparden/Chat_Application) | Kotlin, Android, Firebase | Done |
 | [OOP Chess](https://github.com/lleoparden/oop-chess) | Java, JavaFX | Done |
-| SONiC-GUI — AI-assisted network management | React, FastAPI, Redis, WebSockets, Gemini API, LangChain | Done |
+| [SONiC-GUI](https://github.com/omaaartamer/SONiC-GUI-Backend) — AI-assisted network management | React, FastAPI, Redis, WebSockets, Gemini API, LangChain | Done |
 | [FOS Educational OS — kernel dev](https://github.com/lleoparden/FOS_TEMPLATE) | C | Done |
 
 Full details: [lleoparden.github.io/lleoparden](https://lleoparden.github.io/lleoparden/)
