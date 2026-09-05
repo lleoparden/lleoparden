@@ -16,7 +16,7 @@ Computer Science student at Ain Shams University (Faculty of Computer and Inform
 |---|---|---|
 | [Local RAG System](https://github.com/lleoparden/RAG-NLP-project) | FastAPI, ChromaDB, Ollama, Docker | Done |
 | [Olympus](https://github.com/lleoparden/olympus) | Python, JavaScript, Ollama, Docker | Ongoing |
-| SentinelCheck — anti-scam app | React Native, Supabase | Planned (grad capstone) |
+| WAQI — anti-scam app | React Native, Supabase | Planned (grad capstone) |
 | [Job Application Tracking System](https://github.com/lleoparden/job-tracker) | React Native, FastAPI, Firebase | In progress |
 | [Kotlin Chat Application](https://github.com/lleoparden/Chat_Application) | Kotlin, Android, Firebase | Done |
 | [OOP Chess](https://github.com/lleoparden/oop-chess) | Java, JavaFX | Done |
