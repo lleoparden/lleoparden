@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BriefcaseBusiness, Building2, Database, Download, Trophy } from 'lucide-react';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
@@ -7,7 +7,7 @@ const proofPoints = [
   {
     title: 'TrustFlow',
     label: 'Current flagship',
-    detail: 'Co-owner Â· product and engineering',
+    detail: 'Co-owner · product and engineering',
     to: '/projects/trustflow',
     icon: BriefcaseBusiness,
   },
@@ -21,7 +21,7 @@ const proofPoints = [
   {
     title: 'Local RAG System',
     label: 'Completed flagship',
-    detail: 'FastAPI Â· ChromaDB Â· Ollama',
+    detail: 'FastAPI · ChromaDB · Ollama',
     to: '/projects/local-rag-system',
     icon: Database,
   },

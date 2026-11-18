@@ -8,7 +8,7 @@ const sections = [
   {
     title: 'Flagship Work',
     description: 'The strongest evidence of product ownership, AI systems work, and full-stack delivery.',
-    slugs: ['trustflow', 'local-rag-system', 'sonic-gui'],
+    slugs: ['trustflow', 'naqsh', 'vectr', 'waqi-qr', 'local-rag-system', 'sonic-gui'],
     grid: 'lg:grid-cols-3',
     type: 'full',
   },

@@ -1,4 +1,4 @@
-﻿import SectionHeader from '../ui/SectionHeader';
+import SectionHeader from '../ui/SectionHeader';
 import TechBadge from '../ui/TechBadge';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
 

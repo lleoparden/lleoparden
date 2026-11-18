@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import SectionHeader from '../ui/SectionHeader';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
@@ -40,7 +40,7 @@ const Contact = () => {
         <AnimatedWrapper>
           <div className="text-center mb-12">
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Based in New Cairo, Cairo, Egypt. Iâ€™m open to discussing software development opportunities, practical AI tooling, and interesting product work.
+              Based in New Cairo, Cairo, Egypt. I’m open to discussing software development opportunities, practical AI tooling, and interesting product work.
             </p>
           </div>
         </AnimatedWrapper>

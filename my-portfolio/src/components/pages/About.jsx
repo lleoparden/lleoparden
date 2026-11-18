@@ -1,4 +1,4 @@
-﻿import SectionHeader from '../ui/SectionHeader';
+import SectionHeader from '../ui/SectionHeader';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
 
 const About = () => {
@@ -14,11 +14,11 @@ const About = () => {
           <AnimatedWrapper>
             <div className="prose prose-invert max-w-none">
               <p className="text-lg text-gray-300 mb-6">
-                Iâ€™m a final-year Computer Science student at Ain Shams Universityâ€™s Faculty of Computer and Information Sciences, with an expected graduation date of 2027. I build React/TypeScript interfaces, Python APIs, and AI-powered applications, with hands-on work in real-time systems, local RAG, and open-source collaboration.
+                I’m a final-year Computer Science student at Ain Shams University’s Faculty of Computer and Information Sciences, with an expected graduation date of 2027. I build React/TypeScript interfaces, Python APIs, and AI-powered applications, with hands-on work in real-time systems, local RAG, and open-source collaboration.
               </p>
 
               <p className="text-lg text-gray-300 mb-6">
-                I co-own TrustFlow and help build the product end to end alongside the projectâ€™s other founder. My professional experience also includes two software development internships with Orange Businessâ€™s Network Software Factory team and ongoing freelance work with React, Python, and FastAPI.
+                I co-own TrustFlow and help build the product end to end alongside the project’s other founder. My professional experience also includes two software development internships with Orange Business’s Network Software Factory team and ongoing freelance work with React, Python, and FastAPI.
               </p>
 
               <p className="text-lg text-gray-300">
