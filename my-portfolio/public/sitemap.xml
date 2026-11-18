@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://lleoparden.github.io/lleoparden/</loc></url>
   <url><loc>https://lleoparden.github.io/lleoparden/about</loc></url>
@@ -15,5 +15,8 @@
   <url><loc>https://lleoparden.github.io/lleoparden/projects/kotlin-chat-application</loc></url>
   <url><loc>https://lleoparden.github.io/lleoparden/projects/oop-chess</loc></url>
   <url><loc>https://lleoparden.github.io/lleoparden/projects/fos-educational-os</loc></url>
+  <url><loc>https://lleoparden.github.io/lleoparden/projects/naqsh</loc></url>
+  <url><loc>https://lleoparden.github.io/lleoparden/projects/vectr</loc></url>
+  <url><loc>https://lleoparden.github.io/lleoparden/projects/waqi-qr</loc></url>
   <url><loc>https://lleoparden.github.io/lleoparden/projects/odysseus</loc></url>
 </urlset>

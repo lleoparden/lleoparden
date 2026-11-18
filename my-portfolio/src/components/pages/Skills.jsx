@@ -1,4 +1,4 @@
-import SectionHeader from '../ui/SectionHeader';
+﻿import SectionHeader from '../ui/SectionHeader';
 import TechBadge from '../ui/TechBadge';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
 
@@ -7,7 +7,7 @@ const Skills = () => {
   {
     category: 'Programming Languages',
     skills: [
-      'JavaScript', 'Python', 'Java', 'C++', 'C',
+      'TypeScript', 'JavaScript', 'Python', 'Java', 'C/C++', 'C', 'C#',
       'Kotlin', 'SQL', 'HTML', 'CSS',
       'JSON', 'XML', 'PHP', 'Assembly'
     ]
@@ -25,7 +25,7 @@ const Skills = () => {
     skills: [
       'React', 'Node.js', 'FastAPI', 'Vite',
       'Tailwind CSS', 'Bootstrap', 'JQuery',
-      'Framer Motion', 'MDX'
+      'Framer Motion', 'Electron', 'WebSockets', 'JWT'
     ]
   },
   {
@@ -59,7 +59,7 @@ const Skills = () => {
   {
     category: 'AI & Machine Learning',
     skills: [
-      'RAG', 'ChromaDB', 'Ollama', 'LangChain',
+      'RAG', 'ChromaDB', 'Ollama', 'sentence-transformers', 'LangChain',
       'Embeddings', 'Scikit-learn', 'Pandas', 'NumPy'
     ]
   },
@@ -73,7 +73,7 @@ const Skills = () => {
   {
     category: 'Databases',
     skills: [
-      'MySQL', 'Firestore', 'Redis',
+      'Supabase/PostgreSQL', 'MySQL', 'Firestore', 'Redis',
       'TinyDB', 'MongoDB (basic)'
     ]
   },

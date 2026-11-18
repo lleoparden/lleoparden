@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lleoparden.github.io/lleoparden/sitemap.xml

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BriefcaseBusiness, Building2, Database, Download, Trophy } from 'lucide-react';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
@@ -7,7 +7,7 @@ const proofPoints = [
   {
     title: 'TrustFlow',
     label: 'Current flagship',
-    detail: 'Co-owner · product and engineering',
+    detail: 'Co-owner Â· product and engineering',
     to: '/projects/trustflow',
     icon: BriefcaseBusiness,
   },
@@ -21,7 +21,7 @@ const proofPoints = [
   {
     title: 'Local RAG System',
     label: 'Completed flagship',
-    detail: 'FastAPI · ChromaDB · Ollama',
+    detail: 'FastAPI Â· ChromaDB Â· Ollama',
     to: '/projects/local-rag-system',
     icon: Database,
   },
@@ -51,10 +51,10 @@ const Home = () => {
 
         <AnimatedWrapper delay={0.15}>
           <p className="text-lg md:text-xl text-neutral-300 mb-2">
-            Computer Science Student & Software Developer
+            Full-Stack Developer | AI and Backend Engineering
           </p>
           <p className="text-base text-neutral-400 mb-5 max-w-3xl mx-auto">
-            Building full-stack applications, backend systems, and practical local AI/RAG tooling.
+            Final-year CS student building React/TypeScript interfaces, Python APIs, and AI-powered apps.
           </p>
         </AnimatedWrapper>
 
