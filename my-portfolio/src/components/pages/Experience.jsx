@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import SectionHeader from '../ui/SectionHeader';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
 import TechBadge from '../ui/TechBadge';
@@ -11,13 +11,13 @@ const Experience = () => {
       organization: 'TrustFlow',
       duration: 'Ongoing',
       description:
-        'Co-own and help build TrustFlow end to end alongside the project’s other founder, contributing across product features and UI/UX.',
+        'Co-own and help build TrustFlow end to end alongside the projectâ€™s other founder, contributing across product features and UI/UX. Live at portal.trustedgellc.com; 52 merged PRs spanning workflows, portfolios, navigation, filters, file hub, and UI consistency.',
       technologies: ['Product Development', 'Full-Stack Development', 'UI/UX'],
     },
     {
       title: 'Software Development Intern',
-      organization: 'Orange Business – Network Software Factory Team',
-      duration: 'Jul–Oct 2025 & Jul–Aug 2026',
+      organization: 'Orange Business â€“ Network Software Factory Team',
+      duration: 'Julâ€“Oct 2025 & Julâ€“Aug 2026',
       description:
         'Contributed to network-oriented software solutions across two internship stints and worked in real-world development workflows delivering features aligned with enterprise needs.',
       technologies: ['Network Software Development', 'Agile Practices', 'Team Collaboration'],
@@ -32,7 +32,7 @@ const Experience = () => {
     },
     {
       title: 'IT Job Shadowing',
-      organization: 'EFG Hermes',
+      organization: 'EFG Holding (EFG Hermes)',
       duration: 'Aug 2024',
       description:
         'Observed fintech and investment banking operations and took part in Q&A sessions with professionals on the financial technology landscape.',
@@ -42,7 +42,7 @@ const Experience = () => {
 
   const certificates = [
     {
-      title: 'ECPC Qualification Round – Ranked 68th',
+      title: 'ECPC Qualification Round â€“ Ranked 68th',
       issuer: 'Egyptian Collegiate Programming Contest',
       year: '68th',
       technologies: ['Problem-Solving', 'Algorithms'],

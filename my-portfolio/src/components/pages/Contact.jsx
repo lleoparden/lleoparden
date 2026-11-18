@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { Github, Mail } from 'lucide-react';
+﻿import { motion } from 'framer-motion';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import SectionHeader from '../ui/SectionHeader';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
 
@@ -18,6 +18,13 @@ const Contact = () => {
     icon: Github,
     color: 'text-gray-400 hover:text-white',
     description: '@lleoparden'
+  },
+  {
+    name: 'LinkedIn',
+    href: 'https://linkedin.com/in/mostafa-eid06',
+    icon: Linkedin,
+    color: 'text-sky-400 hover:text-sky-300',
+    description: 'in/mostafa-eid06'
   }
 ];
 
@@ -33,7 +40,7 @@ const Contact = () => {
         <AnimatedWrapper>
           <div className="text-center mb-12">
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Based in New Cairo, Cairo, Egypt. I’m open to discussing software development opportunities, practical AI tooling, and interesting product work.
+              Based in New Cairo, Cairo, Egypt. Iâ€™m open to discussing software development opportunities, practical AI tooling, and interesting product work.
             </p>
           </div>
         </AnimatedWrapper>

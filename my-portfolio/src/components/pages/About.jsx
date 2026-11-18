@@ -1,4 +1,4 @@
-import SectionHeader from '../ui/SectionHeader';
+﻿import SectionHeader from '../ui/SectionHeader';
 import AnimatedWrapper from '../ui/AnimatedWrapper';
 
 const About = () => {
@@ -14,11 +14,11 @@ const About = () => {
           <AnimatedWrapper>
             <div className="prose prose-invert max-w-none">
               <p className="text-lg text-gray-300 mb-6">
-                I’m a Computer Science student at Ain Shams University’s Faculty of Computer and Information Sciences, with an expected graduation date of 2027. I build full-stack applications, backend systems, and practical local AI/RAG tooling.
+                Iâ€™m a final-year Computer Science student at Ain Shams Universityâ€™s Faculty of Computer and Information Sciences, with an expected graduation date of 2027. I build React/TypeScript interfaces, Python APIs, and AI-powered applications, with hands-on work in real-time systems, local RAG, and open-source collaboration.
               </p>
 
               <p className="text-lg text-gray-300 mb-6">
-                I co-own TrustFlow and help build the product end to end alongside the project’s other founder. My professional experience also includes two software development internships with Orange Business’s Network Software Factory team and ongoing freelance work with React, Python, and FastAPI.
+                I co-own TrustFlow and help build the product end to end alongside the projectâ€™s other founder. My professional experience also includes two software development internships with Orange Businessâ€™s Network Software Factory team and ongoing freelance work with React, Python, and FastAPI.
               </p>
 
               <p className="text-lg text-gray-300">
@@ -34,7 +34,7 @@ const About = () => {
                 <li><strong>Location:</strong> New Cairo, Cairo, Egypt</li>
                 <li><strong>Education:</strong> B.Sc. Computer Science, Ain Shams University (expected 2027)</li>
                 <li><strong>Current Work:</strong> TrustFlow, Orange Business, and freelance web development</li>
-                <li><strong>Focus:</strong> Full-stack apps, backend systems, and local AI/RAG tooling</li>
+                <li><strong>Focus:</strong> Full-stack apps, AI and backend engineering, local RAG</li>
                 <li><strong>Achievement:</strong> Ranked 68th in the ECPC qualification round</li>
               </ul>
             </div>
