@@ -30,6 +30,9 @@ const routes = {
 };
 
 const projectRoutes = {
+  naqsh: ['Naqsh', 'Arabic-first visual localizer that turns images into editable, translated RTL layers, built solo for the Meta Global AI Developer Hackathon.'],
+  vectr: ['Vectr', 'A desktop vector illustration application that compiles every layer into a readable React component styled with Tailwind.'],
+  'waqi-qr': ['WAQI-QR Awareness Campaign', 'A live QR scan tracker and anti-scam awareness campaign with a public landing page and an admin dashboard.'],
   trustflow: ['TrustFlow', 'Current flagship product work co-owned and built end to end by Mostafa Eid alongside the project’s other founder.'],
   'local-rag-system': ['Local RAG System', 'A completed containerized retrieval-augmented generation system using FastAPI, ChromaDB, Ollama, and Docker.'],
   'sonic-gui': ['SONiC-GUI', 'A completed AI-assisted network-management platform for SONiC OS with a React interface and FastAPI backend.'],
